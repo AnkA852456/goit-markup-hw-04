@@ -273,7 +273,16 @@ margin-right: 50px;
   font-size: 14px;
 }
 
-.prin-first::before,
+.thumb {
+  width: 270px;
+  height: 120px;
+  background-color: var(--back-ground-color-third);
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
+/* Просто гралася=)  */
+/* .prin-first::before,
 .prin-second::before,
 .prin-third::before,
 .prin-fourth::before {
@@ -286,7 +295,7 @@ margin-right: 50px;
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 30px;
-}
+} */
 
 .prin-first::before {
     background-image: url(../images/prin-first.svg);
@@ -562,6 +571,9 @@ border-radius: 0px 0px 4px 4px;
   background-color:rgba(255, 255, 255, 0.1);;
 }
 
+.connect .pictograms {
+  padding-bottom: 0;
+}
 
 
 
