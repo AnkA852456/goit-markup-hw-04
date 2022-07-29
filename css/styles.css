@@ -246,7 +246,7 @@ margin-right: 50px;
 }
 
 .principles .items {
-  width: calc((100% - 3 * 30px)/4);
+  flex-basis: calc((100% - 3 * 30px)/4);
   }
 
   .principles .items:not(:last-child) {
@@ -274,7 +274,7 @@ margin-right: 50px;
 }
 
 .thumb {
-  width: 270px;
+  flex-basis: calc((100% - 3 * 30px) / 4);
   height: 120px;
   background-color: var(--back-ground-color-third);
   padding: 25px 100px;
@@ -336,7 +336,7 @@ padding-bottom: 94px;
 }
 
 .activity-list .items {
-  width: calc((100% - 2 * 30px)/3);
+  flex-basis: calc((100% - 2 * 30px)/3);
 }
 
 .activity-list .items:not(:last-child) {
@@ -354,7 +354,7 @@ padding-bottom: 94px;
 
 .designers {
   padding-top: 30px;
-  margin-bottom: 16px;
+  padding-bottom: 30px;
 }
 
 .comand {
@@ -363,7 +363,7 @@ padding-bottom: 94px;
 }
 
 .comand-item {
-  width: calc((100% - 3 * 30px)/4);
+  flex-basis: calc((100% - 3 * 30px)/4);
 
   background-color: var(--back-ground-color-main);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -388,6 +388,7 @@ border-radius: 0px 0px 4px 4px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   font-size: 16px;
+  margin-bottom: 16px;
 }
 
 .pictograms {
@@ -398,12 +399,11 @@ border-radius: 0px 0px 4px 4px;
   width: 206px;
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 30px;
 }
 
 .pictogram-item {
   display: flex;
-  width: calc((100% - 10px * 3)/4);
+  flex-basis: calc((100% - 10px * 3)/4);
   height: 44px;
   align-items: center;
   justify-content: center;
@@ -444,7 +444,7 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .clients-list .item {
-  width: calc((100% - 30px * 5) / 6);
+  flex-basis: calc((100% - 30px * 5) / 6);
   border: 1px solid #AFB1B8;
   border-radius: 4px;
 }
@@ -461,8 +461,7 @@ border-radius: 0px 0px 4px 4px;
 .client-link {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 170px;
+  flex-basis: calc((100% - 5 * 30) / 6);
   height: 92px;
   color: #AFB1B8;
 }
@@ -474,7 +473,6 @@ border-radius: 0px 0px 4px 4px;
 
 .icon-link {
   width: 106px;
-  height: 60px;
   fill: currentColor;
 }
 
@@ -636,7 +634,7 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .projects .item {
-  width: calc((100% - 2 * 30px)/3);
+  flex-basis: calc((100% - 2 * 30px)/3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
