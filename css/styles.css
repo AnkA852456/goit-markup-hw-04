@@ -68,7 +68,6 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  align-items: center;
 }
 
 header {
@@ -139,7 +138,7 @@ margin-right: 50px;
 }
 
 .auth-nav .link {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -167,9 +166,6 @@ margin-right: 50px;
   fill: var(--text-color-accent);
 }
 
-.item .link {
-  align-items: center;
-}
 
 
 /* Hero  */
@@ -181,7 +177,7 @@ margin-right: 50px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
   url(../images/background.jpg);
   background-color: #C4C4C4;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
@@ -273,10 +269,12 @@ margin-right: 50px;
 }
 
 .thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-basis: calc((100% - 3 * 30px) / 4);
   height: 120px;
   background-color: var(--back-ground-color-third);
-  padding: 25px 100px;
   margin-bottom: 30px;
 }
 
@@ -347,7 +345,7 @@ padding-bottom: 94px;
 /* Comand  */
 
 .section-comand {
-  padding: 94px 94px;
+  padding: 94px 0;
   background-color: var(--back-ground-color-third);
 }
 
@@ -414,8 +412,11 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .pict-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   color: #AFB1B8;
-  padding: 12px;
   border-radius: 50%;
   width: 44px;
   height: 44px;
@@ -429,6 +430,9 @@ border-radius: 0px 0px 4px 4px;
 
 .pict {
   fill: currentColor;
+}
+.pict-bottom {
+  fill: var(--back-ground-color-main);
 }
 
 
@@ -444,34 +448,36 @@ border-radius: 0px 0px 4px 4px;
 
 .clients-list .item {
   flex-basis: calc((100% - 30px * 5) / 6);
-  border: 1px solid #AFB1B8;
-  border-radius: 4px;
+  height: 92px;
 }
 
 .clients-list .item + .item {
   margin-left: 30px;
 }
 
-.clients-list .item:hover,
-.clients-list .item:focus {
-  border: 1px solid var(--text-color-accent);
-}
 
 .client-link {
   display: flex;
   justify-content: center;
-  flex-basis: calc((100% - 5 * 30) / 6);
-  height: 92px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
   color: #AFB1B8;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  outline: transparent;
 }
 
 .client-link:hover,
 .client-link:focus {
   color: var(--text-color-accent);
+  border: 1px solid var(--text-color-accent);
 }
 
 .icon-link {
   width: 106px;
+  height: 60px;
   fill: currentColor;
 }
 
@@ -557,11 +563,7 @@ border-radius: 0px 0px 4px 4px;
 
 .contacts-page {
   display: flex;
-}
-
-.connect {
-  width: 206px;
-  height: 80px;
+  align-items: baseline;
 }
 
 .bottom-link {
