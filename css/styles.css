@@ -139,6 +139,7 @@ margin-right: 50px;
 
 .auth-nav .link {
   display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -350,8 +351,7 @@ padding-bottom: 94px;
 }
 
 .designers {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px;
 }
 
 .comand {
@@ -394,8 +394,6 @@ border-radius: 0px 0px 4px 4px;
   justify-content: center;
   text-align: center;
   width: 206px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .pictogram-item {
@@ -510,7 +508,6 @@ border-radius: 0px 0px 4px 4px;
 
 .contacts-list {
   padding: 0;
-  margin-right: 70px;
 
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -564,6 +561,10 @@ border-radius: 0px 0px 4px 4px;
 .contacts-page {
   display: flex;
   align-items: baseline;
+}
+
+.contacts-wrap {
+  margin-right: 70px;
 }
 
 .bottom-link {
